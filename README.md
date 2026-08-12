@@ -1,4 +1,4 @@
-# 👋 Hola, soy Gustavo Luévanos Hernández (GLH)
+# 👋 Hola, este perfil fue creado para mostrar parte de la experiencia frente a posiciones de Gerencia con enfoque en la Operatividad
 
 > **Inteligencia y Estrategia Comercial** · Gerente Comercial con 15 años de experiencia liderando transformaciones operativas y estrategias de venta B2B, con un perfil único de inteligencia analítica y certificación en Data Analytics (Google).
 
@@ -7,6 +7,7 @@
 ---
 
 ## 🌊 Proyecto destacado: El Errante · BI & Incentivos
+> Ecosistema de BI para El Errante (cadena de restaurantes con presencia en tres entidades) que optimiza ingresos, ROI y CRM. Une ingeniería de datos con estrategia comercial mediante Predicción de Demanda, Alertas de Deserción y Auditoría de Personal. Es el copiloto del Gerente General para asegurar la escalabilidad en NL, Coahuila y Tamaulipas, blindando el margen ante la volatilidad del mercado.
 
 [![Demo](https://img.shields.io/badge/Demo-Streamlit%20Cloud-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://bi-dashboard-data-driven-restaurant-management-system.streamlit.app/)
 [![Código](https://img.shields.io/badge/C%C3%B3digo-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Imghara/el-errante-bi-dashboard-data-driven-restaurant-management-system)
@@ -53,7 +54,7 @@
 
 ## 📫 Contacto
 
-📧 `gluevanos@gmail.com` · 📍 San Nicolás de los Garza, NL · 📞 811 212 9068
+📧 `gluevanos@gmail.com` · 📍 San Nicolás de los Garza, NL ·
 
 ---
 
