@@ -1,4 +1,4 @@
-# 👋 Hola, este perfil fue creado para mostrar parte de la experiencia frente a posiciones de Gerencia con enfoque en la Operatividad
+# 👋 Hola, este perfil fue creado para mostrar parte de la experiencia frente a posiciones de Gerencia & Dirección con enfoque en la Operatividad y anticipación de escenarios con BI (Business Intelligence) 
 
 > **Inteligencia y Estrategia Comercial** · Gerente Comercial con 15 años de experiencia liderando transformaciones operativas y estrategias de venta B2B, con un perfil único de inteligencia analítica y certificación en Data Analytics (Google).
 
