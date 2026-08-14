@@ -26,15 +26,29 @@
 
 [![Código](https://img.shields.io/badge/C%C3%B3digo-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Imghara/Gelatto)
 [![Documentación](https://img.shields.io/badge/Documentaci%C3%B3n-Maestro-1BA39C?style=for-the-badge)](https://github.com/Imghara/Gelatto/blob/main/Documento_Maestro.md)
+
+## 🌊 Gelatto — Data Warehouse y Dashboard de BI con Prescripción Estratégica
+> Dashboard de Business Intelligence para el Director Comercial y de Marketing de una empresa B2B de lácteos y helados (Nuevo León, Coahuila, Tamaulipas y Durango). No se limita a informar: detecta cuándo un indicador entra en zona de riesgo y prescribe la acción correctiva con su impacto esperado.
+
+El problema: una empresa mediana (~1,200 clientes, 30 vendedores, 13 rutas, 4 canales) toma decisiones con datos dispersos. El Director necesita una fuente única de verdad que le diga qué vender, a quién retener, a qué vendedor capacitar y qué insumo reabastecer.
+
+La solución: Data Warehouse en esquema estrella con 17 tablas (8 dimensiones + 9 hechos) y 1.5M+ filas sintéticas realistas (2023-2025): $2,056M MXN de ingresos, margen 30.5%, y estacionalidad auténtica de helados (temporada alta = 2.35x la baja).
+
+Regla de oro: toda la agregación pesada ocurre en el motor de datos (GROUP BY, ventanas, particionado en SQL). Streamlit recibe solo las filas finales, nunca SELECT * de millones de filas. Arquitectura de doble motor: DuckDB+Parquet en desarrollo y Google BigQuery en producción, conmutados por una variable de entorno.
+
+- 🧭 **9 módulos analíticos**: Resumen Ejecutivo, Ventas, Alertas y Recomendaciones, Clientes y Fraude, Inventarios y Costos, Distribución y Mapas, Incentivos y Campañas, Simulador de Escenarios.
+
+- 🚨 **Motor de alertas y recomendaciones**: umbrales verde/amarillo/rojo por KPI; al cruzar la zona de riesgo genera alerta + recomendación + impacto monetario (vendedor al 68% de cuota → coaching, gap de $450K; cliente que redujo 56% su compra → visita con oferta especial).
+
+- 🕵️ **Detección de fraude y churn**: fraude por z-score sobre ventana móvil de 12 meses previos (12 clientes anómalos detectados); churn con comparación año contra año para eliminar la estacionalidad (evita 921 falsas alarmas); vendedores con cancelaciones del 15-23% auditados.
+
+- 🧮 **Simulador de escenarios**: +5% de precio con elasticidad 1.5 → +$17.5M de margen; promoción de 10% que requiere +75% de volumen para pagarse sola; cuota +10% que deja 15 vendedores bajo el umbral de coaching.
+
+- **Ingeniería**: datos con semilla fija y escenarios sembrados (churn, fraude, desabastos, salto de +25% en lácteos); 8 módulos + 6 interacciones validados con Streamlit AppTest (0 excepciones); listo para migrar a facturación real sin rediseñar. (1.5M+ líneas sintéticas realistas)
+
+Stack: Python · Streamlit · Plotly · DuckDB · BigQuery · pandas · SQL analítico · esquema estrella.
  
-**Dashboard de Business Intelligence y prescripción estratégica** para el Director Comercial y de Marketing de una empresa B2B de lácteos y helados (Nuevo León · Coahuila · Tamaulipas · Durango). Convierte datos en decisiones: qué productos priorizar, a qué vendedor capacitar, a qué clientes retener y qué insumos reabastecer.
- 
-- 🧭 **9 módulos analíticos**: resumen ejecutivo, ventas, alertas y recomendaciones, clientes y fraude, inventarios y costos, distribución y mapas, incentivos y campañas, simulador de escenarios
-- 🚨 **Motor de alertas y recomendaciones**: semáforos 🟢🟡🔴 que no solo detectan el problema, sino que sugieren la acción con su impacto esperado
-- 🕵️ **Detección de fraude y churn**: anomalías de volumen (z-score sobre ventana móvil de 12 meses) y clientes en declive (comparación año contra año)
-- 🧮 **Simulador de escenarios**: elasticidad de precios, punto de equilibrio de promociones e impacto en el cumplimiento de cuota
-- 🛠️ **Stack**: Python · Streamlit · Plotly · DuckDB · BigQuery · esquema en estrella (1.5M+ líneas sintéticas realistas)
- 
+
 🔗 [Demo en vivo](https://gelatto.streamlit.app) · [Código fuente](https://github.com/Imghara/Gelatto) · [Documento Maestro](https://github.com/Imghara/Gelatto/blob/main/Documento_Maestro.md)
 
 ---
