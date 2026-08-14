@@ -13,14 +13,25 @@
 [![Código](https://img.shields.io/badge/C%C3%B3digo-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Imghara/el-errante-bi-dashboard-data-driven-restaurant-management-system)
 [![Manual](https://img.shields.io/badge/Manual-PDF%20APA%207%C2%AA-1BA39C?style=for-the-badge)](https://github.com/Imghara/el-errante-bi-dashboard-data-driven-restaurant-management-system/blob/main/MANUAL_DE_USUARIO.pdf)
 
-**Dashboard de Business Intelligence y prescripción estratégica** para un restaurante de mariscos multisucursal (Nuevo León · Coahuila · Tamaulipas). Convierte datos en decisiones: cuánto marisco comprar, a qué clientes reactivar y a qué productos subirles el precio.
+ Dashboard de Business Intelligence para el Gerente General de una cadena de restaurantes de mariscos con 3 sucursales (Nuevo León, Coahuila y Tamaulipas). No se limita a informar: detecta cuándo el margen entra en zona de riesgo y prescribe la acción correctiva con su impacto esperado, protegiendo la rentabilidad ante la volatilidad del mercado de mariscos.
 
-- 🧭 **10 módulos analíticos**: consolidado financiero, incentivos, CRM, presupuesto, alertas, pronóstico, rotación, deserción, elasticidad y auditoría anti-fraude
-- 🔮 **Pronóstico de demanda** (GradientBoosting): MAPE **30.9%** vs 45.2% de referencia ingenua → kg de marisco y cajas de cerveza
-- 👥 **Detección de churn** (clientes Oro/VIP): 58 clientes = **$1.05M** de valor anual en riesgo
-- 📈 **Matriz de elasticidad de precios** (log-log con efectos fijos) y **auditoría de venta impositiva**
-- 🧪 **41 pruebas automatizadas** con pytest · manual de usuario en normas **APA 7.ª** (28 páginas, una sola tinta)
-- 🛠️ **Stack**: Python · Streamlit · Plotly · pandas · scikit-learn · esquema en estrella (700 000+ líneas)
+
+El problema: un restaurantero multisucursal compra insumos perecederos (mariscos, cerveza) cuyo costo fluctúa ±15% al mes y decide a ciegas: no sabe qué meseros rinden, qué clientes se van o qué platillos aguantan un aumento de precio.
+
+La solución: Dashboard en esquema en estrella con 8 tablas (4 dimensiones + 4 hechos) y 700,000+ líneas de venta sintéticas realistas (2024-2025): $119M MXN de ingresos, margen bruto 49.2%, y estacionalidad auténtica de mariscos (Cuaresma +40%, cuesta de enero −20%).
+
+Regla de oro: datos 100% reproducibles (semilla fija) con las reglas de negocio sembradas en el generador (crecimiento 1.5×, costos ±15%, elasticidad). El ROI usa el costo mayorista real por producto y mes, y el ancla (Sopa de Mariscos) queda fuera de los incentivos por diseño.
+
+- 🧭 10 módulos analíticos: Consolidado Financiero, Incentivos, CRM, Presupuesto vs Real, Alertas, Pronóstico, Rotación de Mesas, Deserción, Elasticidad de Precios y Auditoría Anti-fraude.
+- 🔮 Pronóstico de demanda (GradientBoosting): MAPE 30.9% vs 45.2% de referencia ingenua → convierte el pronóstico semanal en kg de marisco y cajas de cerveza para comprar anticipado al mayorista y congelar precio.
+- 🚨 Centro de alertas con simulador de estrés: 5 reglas con umbrales verde/amarillo/rojo; anticipa qué pasa si el marisco sube 25% o la demanda cae 10% y abre el plan de contingencia.
+- 👥 Detección de churn: 58 clientes Oro/VIP en riesgo = $1.05M MXN de valor anual en peligro, con plan de reactivación listo (Sopa gratis + 2 bebidas de marketing).
+- 📈 Elasticidad de precios (log-log con efectos fijos): 33 productos inelásticos identificados → +5% de precio agrega +$2.5M MXN sin perder clientes.
+- 🕵️ Auditoría anti-fraude: detecta "venta impositiva" — meseros con comisiones altas y servicio < 3.5 — crecimiento que no es sano; 6 meseros críticos con plan de acción.
+- 🧪 Calidad profesional: 41 pruebas automatizadas (pytest) que validan las reglas de negocio + manual de usuario en norma APA 7.ª (28 páginas, una sola tinta).
+
+Stack: Python · Streamlit · Plotly · pandas · scikit-learn · esquema en estrella.
+
 
 🔗 [Demo en vivo](https://bi-dashboard-data-driven-restaurant-management-system.streamlit.app/) · [Código fuente](https://github.com/Imghara/el-errante-bi-dashboard-data-driven-restaurant-management-system) · [Manual de usuario (PDF)](https://github.com/Imghara/el-errante-bi-dashboard-data-driven-restaurant-management-system/blob/main/MANUAL_DE_USUARIO.pdf)
 
