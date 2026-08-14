@@ -24,6 +24,19 @@
 
 🔗 [Demo en vivo](https://bi-dashboard-data-driven-restaurant-management-system.streamlit.app/) · [Código fuente](https://github.com/Imghara/el-errante-bi-dashboard-data-driven-restaurant-management-system) · [Manual de usuario (PDF)](https://github.com/Imghara/el-errante-bi-dashboard-data-driven-restaurant-management-system/blob/main/MANUAL_DE_USUARIO.pdf)
 
+[![Código](https://img.shields.io/badge/C%C3%B3digo-GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Imghara/Gelatto)
+[![Documentación](https://img.shields.io/badge/Documentaci%C3%B3n-Maestro-1BA39C?style=for-the-badge)](https://github.com/Imghara/Gelatto/blob/main/Documento_Maestro.md)
+ 
+**Dashboard de Business Intelligence y prescripción estratégica** para el Director Comercial y de Marketing de una empresa B2B de lácteos y helados (Nuevo León · Coahuila · Tamaulipas · Durango). Convierte datos en decisiones: qué productos priorizar, a qué vendedor capacitar, a qué clientes retener y qué insumos reabastecer.
+ 
+- 🧭 **9 módulos analíticos**: resumen ejecutivo, ventas, alertas y recomendaciones, clientes y fraude, inventarios y costos, distribución y mapas, incentivos y campañas, simulador de escenarios
+- 🚨 **Motor de alertas y recomendaciones**: semáforos 🟢🟡🔴 que no solo detectan el problema, sino que sugieren la acción con su impacto esperado
+- 🕵️ **Detección de fraude y churn**: anomalías de volumen (z-score sobre ventana móvil de 12 meses) y clientes en declive (comparación año contra año)
+- 🧮 **Simulador de escenarios**: elasticidad de precios, punto de equilibrio de promociones e impacto en el cumplimiento de cuota
+- 🛠️ **Stack**: Python · Streamlit · Plotly · DuckDB · BigQuery · esquema en estrella (1.5M+ líneas sintéticas realistas)
+ 
+🔗 [Demo en vivo](https://gelatto.streamlit.app) · [Código fuente](https://github.com/Imghara/Gelatto) · [Documento Maestro](https://github.com/Imghara/Gelatto/blob/main/Documento_Maestro.md)
+
 ---
 
 ## 🛠️ Stack y herramientas
